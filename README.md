@@ -12,6 +12,7 @@ perform a specific task.
 |-------|-------------|
 | [`babysit-prs`](./skills/babysit-prs) | Monitors every open PR in a repo — promotes automation drafts, rebases conflicts, fixes failing CI, resolves review comments, and flags PRs ready to merge. |
 | [`graphify`](./skills/graphify) | Turns any input (code, docs, papers, images) into a clustered knowledge graph with HTML + JSON output and an audit report. |
+| [`improve-codebase-architecture`](./skills/improve-codebase-architecture) | Scans a codebase for deepening opportunities, presents them as a visual HTML report, then grills through whichever one you pick. ([source](https://github.com/mattpocock/skills)) |
 | [`principal-engineer-review`](./skills/principal-engineer-review) | Reviews PRs and local diffs from a principal engineer standpoint — high-signal, MVP scope control, maintainability, security-aware, reuse of existing primitives. ([source](https://github.com/jonmagic/skills)) |
 | [`resolve-pr-comments`](./skills/resolve-pr-comments) | Reviews all comments on the current branch's PR, fixes valid issues, replies to each, and resolves the review threads. |
 
