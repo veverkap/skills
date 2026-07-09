@@ -57,12 +57,35 @@ Step-by-step instructions the agent should follow...
 
 ## Installing
 
-Symlink or copy a skill into your agent's skills directory, e.g.:
+Clone to a stable path, then run the install script — it symlinks every
+`skills/*` folder into your agent skill dirs (`~/.claude/skills` and
+`~/.copilot/skills`, whichever exist):
+
+```bash
+git clone git@github.com:veverkap/skills.git ~/Code/personal/skills
+cd ~/Code/personal/skills && ./install.sh
+```
+
+Because they're symlinks, `git pull` updates every installed skill instantly,
+and edits made through the linked paths write straight back to the repo.
+
+Options:
+
+```bash
+./install.sh --dry-run   # preview without changing anything
+./install.sh --force     # replace existing entries (real dirs or other links)
+./install.sh --copy      # copy instead of symlink (for tools that don't
+                         # follow symlinks; repo no longer stays the live source)
+./install.sh --target ~/some/other/skills   # custom target(s), repeatable
+
+./uninstall.sh           # remove only the symlinks this repo created
+./uninstall.sh --copy    # also remove copies made with install --copy
+```
+
+Manual single-skill install (symlink or copy one folder):
 
 ```bash
 ln -s "$PWD/skills/my-skill" ~/.claude/skills/my-skill
-# or
-ln -s "$PWD/skills/my-skill" ~/.copilot/skills/my-skill
 ```
 
 ## License
