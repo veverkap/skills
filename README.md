@@ -6,6 +6,14 @@ Each skill is a self-contained folder under [`skills/`](./skills) that packages
 instructions (and optional scripts or assets) an AI agent can load on demand to
 perform a specific task.
 
+## Skills
+
+| Skill | Description |
+|-------|-------------|
+| [`babysit-prs`](./skills/babysit-prs) | Monitors every open PR in a repo — promotes automation drafts, rebases conflicts, fixes failing CI, resolves review comments, and flags PRs ready to merge. |
+| [`graphify`](./skills/graphify) | Turns any input (code, docs, papers, images) into a clustered knowledge graph with HTML + JSON output and an audit report. |
+| [`resolve-pr-comments`](./skills/resolve-pr-comments) | Reviews all comments on the current branch's PR, fixes valid issues, replies to each, and resolves the review threads. |
+
 ## Layout
 
 ```
