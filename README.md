@@ -11,9 +11,13 @@ perform a specific task.
 | Skill | Description |
 |-------|-------------|
 | [`babysit-prs`](./skills/babysit-prs) | Monitors every open PR in a repo — promotes automation drafts, rebases conflicts, fixes failing CI, resolves review comments, and flags PRs ready to merge. |
+| [`code-simplifier`](./skills/code-simplifier) | Analyzes recently modified code and opens a PR that simplifies it for clarity, consistency, and maintainability while preserving exact functionality. ([source](https://github.com/githubnext/agentics/blob/main/workflows/code-simplifier.md)) |
 | [`graphify`](./skills/graphify) | Turns any input (code, docs, papers, images) into a clustered knowledge graph with HTML + JSON output and an audit report. |
+| [`grumpy-reviewer`](./skills/grumpy-reviewer) | Reviews a PR as a grumpy 40-year veteran — sarcastic, thorough inline comments on bugs, security, performance, and code quality, plus an overall verdict. ([source](https://github.com/githubnext/agentics/blob/main/workflows/grumpy-reviewer.md)) |
+| [`pr-fix`](./skills/pr-fix) | Fixes a PR with failing CI on demand — diagnoses the failing checks from logs, implements a fix on the PR branch, runs tests/linters, pushes, and comments a summary. ([source](https://github.com/githubnext/agentics/blob/main/workflows/pr-fix.md)) |
 | [`improve-codebase-architecture`](./skills/improve-codebase-architecture) | Scans a codebase for deepening opportunities, presents them as a visual HTML report, then grills through whichever one you pick. ([source](https://github.com/mattpocock/skills)) |
 | [`principal-engineer-review`](./skills/principal-engineer-review) | Reviews PRs and local diffs from a principal engineer standpoint — high-signal, MVP scope control, maintainability, security-aware, reuse of existing primitives. ([source](https://github.com/jonmagic/skills)) |
+| [`pr-nitpick-reviewer`](./skills/pr-nitpick-reviewer) | Reviews a PR for subtle style, naming, structure, and best-practice nitpicks that linters miss — constructive inline comments plus a non-blocking summary. ([source](https://github.com/githubnext/agentics/blob/main/workflows/pr-nitpick-reviewer.md)) |
 | [`resolve-pr-comments`](./skills/resolve-pr-comments) | Reviews all comments on the current branch's PR, fixes valid issues, replies to each, and resolves the review threads. |
 
 ## Layout
