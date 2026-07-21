@@ -11,6 +11,7 @@ perform a specific task.
 | Skill | Description |
 |-------|-------------|
 | [`babysit-prs`](./skills/babysit-prs) | Monitors every open PR in a repo — promotes automation drafts, rebases conflicts, fixes failing CI, resolves review comments, and flags PRs ready to merge. |
+| [`ci-coach`](./skills/ci-coach) | Analyzes a repo's GitHub Actions workflows using real run metrics and opens a PR with low-risk CI/CD optimizations (parallelization, caching, test distribution, artifacts). ([source](https://github.com/githubnext/agentics/blob/main/docs/ci-coach.md)) |
 | [`code-simplifier`](./skills/code-simplifier) | Analyzes recently modified code and opens a PR that simplifies it for clarity, consistency, and maintainability while preserving exact functionality. ([source](https://github.com/githubnext/agentics/blob/main/workflows/code-simplifier.md)) |
 | [`graphify`](./skills/graphify) | Turns any input (code, docs, papers, images) into a clustered knowledge graph with HTML + JSON output and an audit report. |
 | [`grumpy-reviewer`](./skills/grumpy-reviewer) | Reviews a PR as a grumpy 40-year veteran — sarcastic, thorough inline comments on bugs, security, performance, and code quality, plus an overall verdict. ([source](https://github.com/githubnext/agentics/blob/main/workflows/grumpy-reviewer.md)) |
